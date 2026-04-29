@@ -27,6 +27,7 @@ nmap <F4> :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
 
 "-- command
 set showcmd
+set noshowmode
 set conceallevel=1
 
 "-- search settings
@@ -37,3 +38,9 @@ set hlsearch
 
 "-- mouse
 set mouse=a
+
+call plug#begin()
+  " Plugin list
+  Plug 'vim-airline/vim-airline'
+  Plug 'preservim/nerdtree'
+ call plug#end()
